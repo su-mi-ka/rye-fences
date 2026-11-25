@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rye-fences"
+version = "0.1.0"
+description = "Tests are the fence in the rye field. AST detectors for the shapes that never turn red: orphan receivers, test files that collect nothing, importable backups, present-tense liveness claims."
+requires-python = ">=3.11"
+readme = "README.md"
+dependencies = []
+
+[tool.setuptools]
+packages = ["rye_fences"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
